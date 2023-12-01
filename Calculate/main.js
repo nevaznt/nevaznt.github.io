@@ -38,4 +38,5 @@ function refresh(){
     document.getElementById("operation").innerHTML = operation;
     document.getElementById("secondnum").innerHTML = secondnum;
     document.getElementById("reaction").innerHTML = "";
+    document.getElementById("textfield").value = "";
 }
