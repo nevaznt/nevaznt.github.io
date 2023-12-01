@@ -1,0 +1,52 @@
+body{
+    font-family: Consolas;
+    margin: 0;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 5em 0 2em 0;
+}
+
+.example p{
+    display: inline;
+    font-size: 40px;
+}
+
+.example{
+    text-align: center;
+}
+
+.example input{
+    margin: -10px 0 0 0;
+    padding: 12px 10px;
+    font-family: Consolas;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: whitesmoke;
+    border-color: transparent;
+}
+.example button{
+    padding: 6px 20px;
+    background-color: whitesmoke;
+    border-color: transparent;
+    border-radius: 6px;
+}
+
+.example button:hover{
+    background-color: rgb(197, 196, 196);
+}
+
+#refershbutton{
+    padding: 7px 20px;
+    background-color: whitesmoke;
+    border-color: transparent;
+    display: block;
+    margin: 16em auto 0 auto;
+    border-radius: 6px;
+}
+
+#refershbutton:hover{
+    background-color: rgb(197, 196, 196);
+}
