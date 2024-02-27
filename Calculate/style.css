@@ -1,0 +1,99 @@
+body {
+    font-family: Consolas;
+    margin: 0;
+    background-color: #101010;
+
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 2em 0 2em 0;
+    color: #bbb;
+
+}
+
+.example p {
+    display: inline;
+    font-size: 40px;
+
+}
+
+.example {
+    text-align: center;
+    height: 5em;
+    color: #bbb;
+
+}
+
+.example input {
+    color: #bbb;
+    margin: -10px 0 0 0;
+    padding: 12px 10px;
+    font-family: Consolas;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: #222;
+    border-color: transparent;
+}
+
+.example input:focus {
+    outline: #111;
+
+}
+
+.example input::selection{
+    background-color: #444;
+}
+
+.example button {
+    padding: 6px 20px;
+    background-color: #333;
+    border-color: transparent;
+    border-radius: 6px;
+    color: #999;
+
+}
+
+.example button:hover {
+    background-color: #444;
+
+}
+
+#refershbutton {
+    padding: 7px 20px;
+    background-color: #333;
+    border-color: transparent;
+    display: block;
+    margin: 16em auto 0 auto;
+    border-radius: 6px;
+    color: #999;
+
+}
+
+#refershbutton:hover {
+    background-color: #444;
+
+}
+
+.scorediv {
+    font-weight: bold;
+    margin: 40px 40px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    color: #bbb;
+    font-size: 28px;
+    padding: 0;
+
+}
+
+.scorediv p {
+    margin: 0;
+
+}
+
+.example .infotext {
+    font-size: 18px;
+    color: #333;
+    
+}
