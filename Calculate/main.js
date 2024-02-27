@@ -23,7 +23,7 @@ function checkAnswer() {
 
     if(operation === '+'){
         if((firstnum + secondnum) == document.getElementById("textfield").value){ 
-            document.getElementById("reaction").innerHTML = "Goog";
+            document.getElementById("reaction").innerHTML = "Good";
             answerDisplayed = 1;
             score += 1
         }
@@ -31,7 +31,7 @@ function checkAnswer() {
     }
     else if(operation === '-'){
         if((firstnum - secondnum) == document.getElementById("textfield").value) {
-            document.getElementById("reaction").innerHTML = "Goog";
+            document.getElementById("reaction").innerHTML = "Good";
             answerDisplayed = 1;
             score += 1
         }
@@ -39,7 +39,7 @@ function checkAnswer() {
     }
     else if(operation === '*'){
         if((firstnum * secondnum) == document.getElementById("textfield").value) {
-            document.getElementById("reaction").innerHTML = "Goog";
+            document.getElementById("reaction").innerHTML = "Good";
             answerDisplayed = 1;
             score += 1
         }
