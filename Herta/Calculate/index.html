@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Calculate</h1>
+
+    <div class="example">
+        <b>
+            <p id="firstnum"></p>
+            <p id="operation"></p>
+            <p id="secondnum"></p>
+
+            <p>=</p>
+
+            <input type="text" id="textfield" name="textfield" placeholder="any guesses?">
+        </b>
+        <br><br>
+        <button type="button" onclick="checkAnswer()">So...?</button>
+        <br><br><br>
+        <p id="reaction"></p>
+    </div>
+    
+    <button type="button" onclick="refresh()" id="refershbutton">New one pls.</button>
+    
+    <script src="main.js"></script>
+</body>
+</html>
