@@ -8,25 +8,27 @@ function fEvent(no){
     if (field[Number(no)-1] != 0) return;
     
     if(onTurn){
-        document.getElementById(no).innerHTML = "<img src=\"x.png\">";
+        document.getElementById(no).innerHTML = "<img src=\"x.svg\">";
         document.getElementById(no).style.cursor = "context-menu";
         field[Number(no)-1] = 1;
         onTurn = 0;
         if(checkForWin(1) == 1){
             fWork = 0;
-            document.getElementById("winText").innerHTML = "<img src=\"x.png\">WIN!";
+            document.getElementById("winText").innerHTML = "<img src=\"x.svg\">WON!";
             for(let i = 1; i < 10; i++) document.getElementById(String(i)).style.cursor = "context-menu";
+            return;
         }
     }
     else{
-        document.getElementById(no).innerHTML = "<img src=\"c.png\">";
+        document.getElementById(no).innerHTML = "<img src=\"c.svg\">";
         document.getElementById(no).style.cursor = "context-menu";
         field[Number(no)-1] = 2;
         onTurn = 1;
         if (checkForWin(2) == 1){
             fWork = 0;
-            document.getElementById("winText").innerHTML = "<img src=\"c.png\">WIN!";
+            document.getElementById("winText").innerHTML = "<img src=\"c.svg\">WON!";
             for(let i = 1; i < 10; i++) document.getElementById(String(i)).style.cursor = "context-menu";
+            return;
         }
     }
     
