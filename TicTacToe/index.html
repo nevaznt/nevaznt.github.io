@@ -2,39 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TicTacToe</title>
+    <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="web-icon.ico">
+    <link rel="icon" href="icon.ico">
 </head>
 <body>
-
     <h1>TIC-TAC-TOE</h1>
-    
-    <div class="content">
-        <table cellspacing="0">
-            <tr>
-                <td><div class="Tplace" onclick="fun('p1')"><p id="p1"></p></div></td>
-                <td><div class="Tplace" onclick="fun('p2')" style="border-left: 2px solid #bbb; border-right: 2px solid #bbb;"><p id="p2"></p></div></td>
-                <td><div class="Tplace" onclick="fun('p3')"><p id="p3"></p></div></td>
-            </tr>
-            <tr>
-                <td><div class="Tplace" onclick="fun('p4')" style="border-top: 2px solid #bbb; border-bottom: 2px solid #bbb;"><p id="p4"></p></div></td>
-                <td><div class="Tplace" onclick="fun('p5')" style="border: 2px solid #bbb;"><p id="p5"></p></div></td>
-                <td><div class="Tplace" onclick="fun('p6')" style="border-top: 2px solid #bbb; border-bottom: 2px solid #bbb;"><p id="p6"></p></div></td>
-            </tr>
-            <tr>
-                <td><div class="Tplace" onclick="fun('p7')"><p id="p7"></p></div></td>
-                <td><div class="Tplace" onclick="fun('p8')" style="border-right: 2px solid #bbb; border-left: 2px solid #bbb;"><p id="p8"></p></div></td>
-                <td><div class="Tplace" onclick="fun('p9')"><p id="p9"></p></div></td>
-            </tr>
-        </table>
+
+    <div class="c">
+        <div class="t">
+            <div class="row">
+                <div class="line" style="left: 0px;" id="11"></div>
+                <div class="cell" id="1" onclick="fEvent(1)"></div>
+                <div class="line" style="left: 100px;" id="22"></div>
+                <div class="cell" style="border-left: 2px solid #bbb; border-right: 2px solid #bbb;" id="2" onclick="fEvent(2)"></div>
+                <div class="line" style="left: 200px;" id="33"></div>
+                <div class="cell" id="3" onclick="fEvent(3)"></div>
+            </div>
+            <div class="row">
+                <div class="line" style="left: 0px;" id="44"></div>
+                <div class="cell" style="border-top: 2px solid #bbb; border-bottom: 2px solid #bbb;" id="4" onclick="fEvent(4)"></div>
+                <div class="line" style="left: 100px;" id="55"></div>
+                <div class="cell" style="border: 2px solid #bbb;" id="5" onclick="fEvent(5)"></div>
+                <div class="line" style="left: 200px;" id="66"></div>
+                <div class="cell" style="border-top: 2px solid #bbb; border-bottom: 2px solid #bbb;" id="6" onclick="fEvent(6)"></div>
+            </div>
+            <div class="row">
+                <div class="line" style="left: 0px;" id="77"></div>
+                <div class="cell" id="7" onclick="fEvent(7)"></div>
+                <div class="line" style="left: 100px;" id="88"></div>
+                <div class="cell" style="border-left: 2px solid #bbb; border-right: 2px solid #bbb;" id="8" onclick="fEvent(8)"></div>
+                <div class="line" style="left: 200px;" id="99"></div>
+                <div class="cell" id="9" onclick="fEvent(9)"></div>
+            </div>
+        </div>
+
+        <div class="winText" id="winText"></div>
+
+        <div class="resetB" onclick="reset()">RESET</div>
     </div>
-
-    <div id="statusText"></div>
-
-    <div class="buttons"></div>
 
     <script src="main.js"></script>
 </body>
